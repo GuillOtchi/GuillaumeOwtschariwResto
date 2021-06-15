@@ -1,0 +1,14 @@
+﻿@model Resto.Models.SectionViewModel
+
+<h1>La Carte</h1>
+<br/>
+@foreach (var lesSections in Model.Sections)
+{
+    <h2>@lesSections.Nom</h2>
+    <br/>
+    foreach (var produit in lesSections.Produits)
+    {
+        <li>@produit.Nom .............. @produit.Prix €</li>
+    }
+    <br/>
+}

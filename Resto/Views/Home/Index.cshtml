@@ -1,0 +1,12 @@
+﻿@model Resto.Models.SectionViewModel
+
+<h2>Nos Sections</h2>
+
+@foreach (var item in Model.Sections)
+            {
+<div class="col">
+    <div class="card">
+        <div class="card-header"><h2>@item.Nom</h2></div>
+    </div>
+</div>
+            }
